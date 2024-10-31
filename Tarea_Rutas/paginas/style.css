@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: linear-gradient(135deg, #fff8e1 25%, #82e4ff 75%); /* Gradiente de fondo */
+    color: #333; /* Color del texto */
+    overflow: hidden; /* Oculta el scroll */
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Header Styles */
+header {
+    background-color: #07fff7ef; /* Color del encabezado en amarillo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(-20px); /* Se mueve hacia arriba */
+    animation: fadeInDown 0.8s forwards; /* Aplicar animación */
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1; /* Hacer visible */
+        transform: translateY(0); /* Regresar a la posición original */
+    }
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Espacio para el header y footer */
+    animation: backgroundAnimation 15s linear infinite; /* Animación de fondo */
+}
+
+.container {
+    text-align: center;
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(20px); /* Se mueve hacia abajo */
+    animation: fadeInUp 0.8s forwards; /* Aplicar animación */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Hacer visible */
+        transform: translateY(0); /* Regresar a la posición original */
+    }
+}
+
+/* Button Container Styles */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    background-color: #000000; /* Color de fondo del botón (negro muy oscuro) */
+    color: white;
+    padding: 12px 24px; /* Espaciado del botón */
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s; /* Transición suave */
+    font-size: 16px; /* Tamaño de fuente */
+    animation: pulse 1s infinite; /* Animación de pulsación */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Escala al 105% */
+    }
+}
+
+.button:hover {
+    background-color: #222626; /* Color al pasar el mouse (gris oscuro) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #07ff62; /* Color del pie de página en amarillo */
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    opacity: 0; /* Comienza invisible */
+    transform: translateY(20px); /* Se mueve hacia abajo */
+    animation: fadeInUp 0.8s forwards; /* Aplicar animación */
+    animation-delay: 0.5s; /* Retrasar la animación del pie de página */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .button {
+        padding: 15px 30px; /* Aumenta el tamaño del botón en pantallas pequeñas */
+        font-size: 14px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 3em; /* Ajusta el tamaño según lo desees */
+        margin: 0; /* Elimina el margen por defecto */
+    }    
+}

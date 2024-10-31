@@ -1,0 +1,41 @@
+body {
+    background-color: aquamarine
+}
+
+.calculadora {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid rgb(179, 0, 255);
+    border-radius: 5px;
+    background-color: rgb(127, 197, 255);
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilo adicional para centrar el botón */
+.button-container {
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+/* Estilo para el botón Regresar */
+.button-regresar {
+    background-color: rgb(33, 31, 31); /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio interior */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+
+.button-regresar:hover {
+    background-color: #333; /* Color de fondo más oscuro al pasar el ratón */
+}

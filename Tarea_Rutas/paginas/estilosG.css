@@ -1,0 +1,96 @@
+/* Estilos generales */ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Color de fondo */
+    color: #333; /* Color de texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.form-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 90%;
+    max-width: 600px; /* Ancho máximo */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Grupo de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Etiqueta y input en columna */
+}
+
+/* Etiquetas y inputs */
+label {
+    display: block;
+    margin: 5px 0; /* Espacio superior e inferior para etiquetas */
+}
+
+input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espacio interior */
+    margin: 5px 0; /* Margen superior e inferior ajustado */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+    margin-top: 10px; /* Espaciado superior para el contenedor de botones */
+}
+
+/* Botones */
+button {
+    flex: 1; /* Hacen que los botones se expandan para llenar el espacio */
+    padding: 10px;
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    cursor: pointer; /* Cursor de mano */
+    margin: 0 5px; /* Margen entre botones */
+}
+
+button:hover {
+    background-color: #00b362; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+/* Estilo para el contenedor del código QR */
+#qr-code {
+    margin-top: 20px; /* Espaciado superior */
+    text-align: center; /* Centramos el QR */
+}
+
+/* Estilo para el contenedor del código QR */
+.qr-code-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 20px; /* Margen superior */
+    text-align: center; /* Centramos el QR */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .input-group {
+        flex: 1 1 100%; /* En pantallas pequeñas, ocupa todo el ancho */
+    }
+    button {
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
+        margin: 5px 0; /* Espaciado entre botones */
+    }
+}
