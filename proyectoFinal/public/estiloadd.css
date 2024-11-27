@@ -1,0 +1,117 @@
+/* Estilos generales para el body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e2a47, #4c5c8f); /* Fondo con difuminado en tonos oscuros */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Estilos para el contenedor del formulario */
+form {
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; /* Limitar el tamaño máximo */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Difuminado de fondo */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Título del formulario */
+h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para las etiquetas */
+label {
+    color: #fff;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e3c56;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color: #00bcd4; /* Color de fondo cuando se enfoca */
+    transform: scale(1.02);
+}
+
+/* Estilos para el botón de registro */
+button[type="submit"] {
+    background-color: #00bcd4;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #008c9e;
+    transform: translateY(-3px);
+}
+
+/* Estilos para el botón "Regresar" */
+.button-regresar {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-regresar:hover {
+    background-color: #f50057;
+    transform: translateY(-3px);
+}
+
+/* Línea horizontal de separación */
+hr {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 30px auto;
+}
+
+/* Estilo para centrar el formulario */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+

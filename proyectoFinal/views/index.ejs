@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/estilos.css">
+
+</head>
+<body>
+   <div class="container">
+    <h1>Listar usuarios</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre|</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+        <!-- JS -->
+         <% users.forEach(user =>{  %>
+        <tr>
+            <td><%=user.id %></td>
+            <td><%=user.name %></td>
+            <td><%=user.email %></td>
+            <td>
+                <a href="/edit/<%= user.id %>">Editar</a>|
+                <a href="/delete/<%= user.id %>">Eliminar</a>
+            </td>
+
+        </tr>
+        <% }); %>
+    </table>
+
+            <div>
+                <!-- Botón de regreso con clase para estilo -->
+                <input type="button" class="button-regresar" value="Añadir" onclick="location.href='/add'" style="width: auto;">
+            </div>
+        </div> 
+
+</body>
+</html>
